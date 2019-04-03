@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<EmpirixScriptRequestDoc>
+  <EmpirixScriptRequest requestType="EXECUTE">
+
+   <ScriptRequest>
+     <Script scriptFile="Empirix\Scripts\Script_Calling_Called.sbl"/>
+     <Channel id="1"/>
+     <InputVariable parameter="gCalling_Called"    value="CALLED"/> 
+     <InputVariable parameter="gRelease_or_Wait"   value="RELEASE"/> 
+     <InputVariable parameter="gCheckVoicePath"    value="NO"/> 
+     <!-- <InputVariable parameter="gSyncCallID"        value="B2A_sync"/> -->
+     <InputVariable parameter="gWFCTimeout"        value="20000"/>     
+     <InputVariable parameter="gWFCTimeRings"      value="1000"/>
+     <InputVariable parameter="gDTMFCmd"           value="W100"/>	 
+     <InputVariable parameter="gAnswer_Dis"        value="ANSWER"/>       
+     <InputVariable parameter="gSyncCount"         value="2"/>
+   </ScriptRequest>
+   
+    <ScriptRequest>
+     <Script scriptFile="Empirix\Scripts\Script_Calling_Called.sbl"/>
+     <Channel id="2"/>
+     <InputVariable parameter="gCalling_Called"    value="CALLING"/>
+     <InputVariable parameter="gRelease_or_Wait"   value="WAIT"/> 
+     <InputVariable parameter="gCheckVoicePath"    value="NO"/>
+     <!-- <InputVariable parameter="gSyncCallID"        value="B2A_sync"/> -->  
+     <InputVariable parameter="gDTMFCmd"           value="W100"/>	 
+     <InputVariable parameter="gPhoneNumber"       value="3602131064"/>      
+     <InputVariable parameter="gSyncCount"         value="2"/>
+	 <!-- <InputVariable parameter="gModifySDP"         value="acodec'PPP"/> -->
+   </ScriptRequest>   
+   
+  </EmpirixScriptRequest>
+</EmpirixScriptRequestDoc>
+

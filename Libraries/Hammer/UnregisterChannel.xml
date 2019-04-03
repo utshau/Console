@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<EmpirixScriptRequestDoc>
+  <EmpirixScriptRequest requestType="EXECUTE"> 
+     <ScriptRequest>
+       <Script scriptFile="Empirix\Scripts\Script_Calling_Called_Console.sbl"/>
+        <Channel id="1"/> 
+        <InputVariable parameter="gCalling_Called"		value="NOCALL"/>
+        <InputVariable parameter="gRelease_or_Wait"		value="NONE"/>
+        <InputVariable parameter="gRegisterChannel"		value="0"/>
+   </ScriptRequest>
+   
+     <ScriptRequest>
+       <Script scriptFile="Empirix\Scripts\Script_Calling_Called_Console.sbl"/>
+        <Channel id="2"/> 
+        <InputVariable parameter="gCalling_Called"		value="NOCALL"/>
+        <InputVariable parameter="gRelease_or_Wait"		value="NONE"/>
+        <InputVariable parameter="gRegisterChannel"		value="0"/>
+   </ScriptRequest>
+   
+  </EmpirixScriptRequest>
+</EmpirixScriptRequestDoc>
